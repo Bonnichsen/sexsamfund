@@ -5,21 +5,95 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dokumentationssite</title>
-    <link rel="stylesheet" href="dokumentationssite/style.css">
+    <link rel="stylesheet" href="/dokumentationssite/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400, 700" rel="stylesheet">
 </head>
 
-    <header></header>
+<header>
+    <!---- DROPDOWN MENU --->
+    <div class="container_drop">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#animation">ANIMATIONEN</a>
+                <a href="#history">HISTORIESTRUKTUR</a>
+                <a href="#process">DESIGN</a>
+                <a href="#characters">KARAKTER</a>
+                <a href="#coding">KODNINGSPROCES</a>
+                <a href="#work">ARBEJDSPROCES</a>
+                <a href="#contact">KONTAKT</a>
+            </div>
+        </div>
+    </div>
+    <!--- RETURN TO TOP BUTTON --->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+</header>
+
 <body>
-    <section id="animation">Animationen</section>
-    <section id="history">Historiestruktur</section>
-     <section id="process">Design proces</section>
-     <section id="characters">Karakter design</section>
-     <section id="coding">Kodnings proces</section>
-     <section id="work">Arbejdsproces</section>
-     <section id="contact">Kontakt</section>
-    <script src="dokumentationssite/java.js"></script>
+
+    <div id="content">
+        <!--- NAV MENU --->
+        <div id="nav_menu">
+            <nav>
+                <a href="#animation">ANIMATIONEN</a>
+                <a href="#history">HISTORIESTRUKTUR</a>
+                <a href="#process">DESIGN</a>
+                <a href="#characters">KARAKTER</a>
+                <a href="#coding">KODNINGSPROCES</a>
+                <a href="#work">ARBEJDSPROCES</a>
+                <a href="#contact">KONTAKT</a>
+            </nav>
+        </div>
+        <section id="splash">Splash</section>
+        <section id="animation">Animationen
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="history">Historiestruktur
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="process">Design proces
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="characters">Karakter design
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="coding">Kodnings proces
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="work">Arbejdsproces
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+        <section id="contact">Kontakt
+            <div class="sectionwrapper">
+                <div class="column_1"></div>
+                <div class="column_2"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="/dokumentationssite/java.js"></script>
 </body>
 
 </html>
