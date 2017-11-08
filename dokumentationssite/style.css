@@ -54,7 +54,7 @@ footer {
     z-index: 1;
 
     font-weight: lighter;
-    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: 'Futura';
 }
 
 footer p {
@@ -125,7 +125,7 @@ nav a {
     color: #202533;
     margin: 1vw;
     text-decoration: none;
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     font-weight: bold;
     font-size: 1.2vw;
     letter-spacing: 0.3vw;
@@ -227,7 +227,7 @@ header {
     padding: 20px 0px 0px 5px;
     text-decoration: none;
     display: block;
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     letter-spacing: 3px;
 }
 
@@ -297,20 +297,32 @@ header {
     text-align: center;
     margin: 0;
     font-size: 3vw;
-    font-family: 'Open Sans';
+    font-family: 'Futura';
     letter-spacing: 0.4vw;
+    color: #F7F0E7;
+
+}
+
+#contact h2{
+    text-align: center;
+    margin: 0;
+    font-size: 1.5vw;
+    font-family: 'Futura';
+    letter-spacing: 0.1vw;
+    color: #F7F0E7;
 }
 
 #contact .sectionwrapper {
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     height: 100%;
     width: 100%;
+    background-color: #F49131;
+
 }
 
 #contact .column_1 {
-    background-color: green;
     height: 40%;
     width: 100%;
     display: flex;
@@ -320,12 +332,10 @@ header {
 }
 
 #contact .column_2 {
-    background-color: red;
     height: 60%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
 }
 
