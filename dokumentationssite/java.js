@@ -4,6 +4,19 @@ $(document).ready(function () {
         $(".dropdown").slideToggle();
     });
 });
+
+$(window).resize(function () {
+    if ($(window).width() => 700) {
+        $('#content').addClass('content_desktop');
+        $('#content').removeClass('content_mobile');
+    }
+});
+$(window).resize(function () {
+    if ($(window).width() <= 800) {
+        $('#content').addClass('content_mobile');
+        $('#content').removeClass('content_desktop');
+    }
+});
 window.onscroll = function () {
     scrollFunction()
 };

@@ -11,32 +11,6 @@ body {
     height: 100%;
 }
 
-#content {
-    position: absolute;
-    overflow: hidden;
-    z-index: 2;
-    white-space: nowrap;
-    background-color: #EAEDEE;
-    margin: 125px 0px 0px 265px;
-    height: 550px;
-    animation-name: content_move_in;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-direction: reverse;
-    animation-timing-function: ease-in;
-}
-
-@keyframes content_move_in {
-    0% {
-        left: 0;
-        opacity: 1;
-    }
-    100% {
-        left: 50vw;
-        opacity: 0;
-    }
-}
-
 section {
     display: inline-block;
     vertical-align: top;
@@ -62,7 +36,42 @@ footer p {
     color: white;
 }
 
-/*----- BLOCKS IN ORDER ------*/
+.content_desktop {
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    white-space: nowrap;
+    background-color: #EAEDEE;
+    margin: 125px 0px 0px 265px;
+    height: 550px;
+    animation-name: content_move_in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+}
+
+@keyframes content_move_in {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        left: 50vw;
+        opacity: 0;
+    }
+}
+
+.content_mobile{
+    z-index: 2;
+    background-color: #EAEDEE;
+    margin: 125px 0px 0px 265px;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*------- ARROW NEXT BUTTON ------*/
 
 .block_arrow {
     text-align: center;
@@ -89,7 +98,7 @@ footer p {
     text-decoration: none;
 }
 
-/*---- BACK TO TOP BUTTON ----*/
+/*------- BACK TO TOP BUTTON -------*/
 
 #myBtn {
     display: none;
@@ -107,7 +116,7 @@ footer p {
     box-shadow: 1px 5px 5px 0px rgba(0, 0, 0, 0.5)
 }
 
-/*------- NAVIGATIONS MENU -----*/
+/*---------- NAVIGATIONS MENU --------*/
 
 #nav_menu {
     flex-wrap: nowrap;
@@ -274,7 +283,7 @@ header {
 #history h1 {
     text-align: center;
     margin: 0;
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Futura';
     letter-spacing: 5px;
     color: #F7F0E7;
@@ -309,7 +318,7 @@ header {
 #contact h1 {
     text-align: center;
     margin: 0;
-    font-size: 70px;
+    font-size: 60px;
     font-family: 'Futura';
     letter-spacing: 5px;
     color: #F7F0E7;
@@ -349,7 +358,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    margin: 40px 0px 0px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
 #contact .column_2 {
@@ -369,6 +378,10 @@ header {
     height: 200px;
 }
 
+#benjamin:hover {
+    transform: scale(1.3);
+}
+
 #beatrice {
     background-image: url("/img/selfportraits/beatrice.jpeg");
     background-size: cover;
@@ -376,6 +389,10 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+}
+
+#beatrice:hover {
+    transform: scale(1.3);
 }
 
 #anna {
@@ -387,6 +404,10 @@ header {
     height: 200px;
 }
 
+#anna:hover {
+    transform: scale(1.3);
+}
+
 #amanda {
     background-image: url("/img/selfportraits/amanda.jpg");
     background-size: cover;
@@ -394,4 +415,9 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+}
+
+#amanda:hover {
+    transform: scale(1.3);
+
 }
