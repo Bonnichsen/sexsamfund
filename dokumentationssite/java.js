@@ -6,15 +6,13 @@ $(document).ready(function () {
 });
 
 $(window).resize(function () {
-    if ($(window).width() => 700) {
-        $('#content').addClass('content_desktop');
-        $('#content').removeClass('content_mobile');
-    }
-});
-$(window).resize(function () {
-    if ($(window).width() <= 800) {
+    if ($(window).width() <= 828) {
         $('#content').addClass('content_mobile');
         $('#content').removeClass('content_desktop');
+        $('#contact_mobile').show();
+    } else {
+        $('#content').addClass('content_desktop');
+        $('#content').removeClass('content_mobile');
     }
 });
 window.onscroll = function () {

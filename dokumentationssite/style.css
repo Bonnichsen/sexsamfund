@@ -26,8 +26,6 @@ footer {
     opacity: 0.5;
     bottom: 20px;
     z-index: 1;
-
-    font-weight: lighter;
     font-family: 'Futura';
 }
 
@@ -60,15 +58,6 @@ footer p {
         left: 50vw;
         opacity: 0;
     }
-}
-
-.content_mobile{
-    z-index: 2;
-    background-color: #EAEDEE;
-    margin: 125px 0px 0px 265px;
-    width: 550px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 /*------- ARROW NEXT BUTTON ------*/
@@ -152,7 +141,7 @@ nav a:hover {
 header {
     position: fixed;
     width: 100%;
-    background-color: #F49131;
+    background-color: #202533;
     height: 55px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 4;
@@ -164,7 +153,7 @@ header {
     padding: 8px 20px;
     display: block;
     cursor: pointer;
-    background-color: #F49131;
+    background-color: #202533;
     min-width: 200px;
 }
 
@@ -191,7 +180,7 @@ header {
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
-    background-color: #202533;
+    background-color: #F49131;
 
 }
 
@@ -200,7 +189,7 @@ header {
 
 .change .bar2 {
     opacity: 0;
-    background-color: #202533;
+    background-color: #F49131;
 
 }
 
@@ -210,7 +199,7 @@ header {
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
-    background-color: #202533;
+    background-color: #F49131;
 
 }
 
@@ -244,7 +233,7 @@ header {
 /* Change color of dropdown links on hover */
 
 .dropdown-content a:hover {
-    color: #202533;
+    color: #F49131;
 }
 
 
@@ -376,6 +365,7 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+    order: 1;
 }
 
 #benjamin:hover {
@@ -389,6 +379,7 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+    order: 2;
 }
 
 #beatrice:hover {
@@ -402,6 +393,11 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+    order: 3;
+}
+
+#contact .anna {
+    order: 3;
 }
 
 #anna:hover {
@@ -415,9 +411,211 @@ header {
     border-radius: 100px;
     width: 200px;
     height: 200px;
+    order: 4;
+}
+
+#contact .amanda {
+    order: 4;
 }
 
 #amanda:hover {
     transform: scale(1.3);
 
+}
+
+
+/*----------- MOBILE VERSION ----------*/
+
+@media all and (max-width: 828px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    section {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-color: #EAEDEE;
+    }
+
+    footer {
+        z-index: 3;
+        width: 100%;
+        height: 40px;
+        bottom: 0;
+        opacity: 1;
+        background-color: #202533;
+        font-family: 'Futura';
+    }
+
+    footer p {
+        margin: auto;
+        color: white;
+    }
+
+    #contact_mobile {
+        display: show;
+    }
+    #contact {
+        display: none;
+
+    }
+    /*------ HISTORY -----*/
+    #history h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F7F0E7;
+        width: 100%;
+    }
+    #history .sectionwrapper {
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F49131;
+
+    }
+
+    #history .column_1 {
+        width: 100%;
+        height: 50%;
+        background-color: green;
+    }
+
+    #history .column_2 {
+        width: 100%;
+        height: 50%;
+        background-color: blue;
+    }
+
+    /*------ CONTACT ------*/
+    #contact_mobile h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F7F0E7;
+        margin-top: 30px;
+    }
+
+    #contact_mobile h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 2px;
+        color: #F7F0E7;
+    }
+
+    #contact_mobile li {
+        margin: 0;
+        font-size: 12px;
+        font-family: 'Futura';
+        letter-spacing: 1px;
+        color: #F7F0E7;
+        line-height: 22px;
+    }
+
+    #contact_mobile .sectionwrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F49131;
+
+    }
+
+    #contact_mobile .column_1 {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px 20px 150px 20px;
+    }
+
+    #benjamin {
+        background-image: url("/img/selfportraits/benjamin.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 500px;
+        width: 300px;
+        height: 300px;
+        order: 1;
+        margin: 20px 0px;
+    }
+    #contact_mobile .benjamin {
+        order: 1;
+    }
+    #benjamin:hover {
+        transform: scale(1);
+    }
+
+    #beatrice {
+        background-image: url("/img/selfportraits/beatrice.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 500px;
+        width: 300px;
+        height: 300px;
+        order: 2;
+        margin: 20px 0px;
+    }
+    #contact_mobile .beatrice {
+        order: 2;
+    }
+    #beatrice:hover {
+        transform: scale(1);
+    }
+
+    #anna {
+        background-image: url("/img/selfportraits/anna.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 500px;
+        width: 300px;
+        height: 300px;
+        order: 3;
+        margin: 20px 0px;
+    }
+    #contact_mobile .anna {
+        order: 3;
+    }
+    #anna:hover {
+        transform: scale(1);
+    }
+
+    #amanda {
+        background-image: url("/img/selfportraits/amanda.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 500px;
+        width: 300px;
+        height: 300px;
+        order: 4;
+        margin: 20px 0px;
+    }
+    #contact_mobile .amanda {
+        order: 4;
+    }
+    #amanda:hover {
+        transform: scale(1);
+    }
+}
+
+.content_mobile {
+    z-index: 1;
+    position: absolute;
+    background-color: #EAEDEE;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
