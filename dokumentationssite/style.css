@@ -1,44 +1,32 @@
 body {
     margin: 0;
+    padding: 0;
+}
+
+#background {
+    background-color: #202533;
+    background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 #content {
     position: absolute;
     overflow: hidden;
-    z-index: 3;
+    z-index: 2;
     white-space: nowrap;
-    margin: 150px 80px 100px 320px;
+    background-color: #EAEDEE;
+    margin: 100px 80px 80px 300px;
     height: 500px;
-    width: 500px;
-    background-color: white;
-    animation-name: blocks_move_in;
+    animation-name: content_move_in;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-direction: reverse;
     animation-timing-function: ease-in;
 }
 
-.sectionwrapper{
-    width: 500px;
-    height: 500px;
-}
-
-#background {
-    background-color: #202533;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-}
-
-#contact{
-    display: inline-block;
-}
-#work{
-    display: inline-block;
-    position: fixed;
-}
-
-@keyframes blocks_move_in {
+@keyframes content_move_in {
     0% {
         left: 0;
         opacity: 1;
@@ -49,25 +37,86 @@ body {
     }
 }
 
-/*--------- NAV MENU -----*/
+section {
+    display: inline-block;
+    vertical-align: top;
+    width: 700px;
+    height: 500px;
+    background-color: #EAEDEE;
+}
 
-#nav_menu {
-    background-color: #F49131;
-    padding: 20px;
+#animation .sectionwrapper {
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+#animation .column_1 {
+    background-color: red;
+    height: 100%;
+    width: 50%;
+}
+
+#animation .column_2 {
+    background-color: green;
+    height: 100%;
+    width: 50%;
+}
+
+#title {
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+}
+
+#title p {
+    color: white;
+    font-size: 20px;
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    opacity: 0.5;
+    bottom: 20px;
+    z-index: 1;
+
+    font-weight: lighter;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+footer p {
+    margin: auto;
+    color: white;
+}
+
+/*----- BLOCKS IN ORDER ------*/
+
+.block_arrow {
     text-align: center;
+    margin-top: 200px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 2;
+    font-size: 60px;
+    cursor: default;
+    background-color: #EAEDEE;
 }
 
-nav a {
-    margin: 20px;
-    font-size: 1.6vw;
-    text-decoration: none;
-    color: #EAEDEE;
 
+#next_btn {
+    border: none;
+    background: none;
+    font-size: 60px;
+    color: #F49131;
 }
 
-/*------ RETURN TO TOP BUTTON ------*/
 
 #myBtn {
     display: none;
