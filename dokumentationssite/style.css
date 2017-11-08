@@ -40,7 +40,7 @@ body {
 section {
     display: inline-block;
     vertical-align: top;
-    width: 1100px;
+    width: 1450px;
     height: 550px;
     background-color: #EAEDEE;
 }
@@ -278,6 +278,7 @@ header {
     font-family: 'Futura';
     letter-spacing: 5px;
     color: #F7F0E7;
+    width: 100%;
 
 }
 
