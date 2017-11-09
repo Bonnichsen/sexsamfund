@@ -2,18 +2,22 @@ $(document).ready(function () {
     $(".container_drop").click(function () {
         $(".container_drop").toggleClass("change");
         $(".dropdown").slideToggle();
-    });
-});
-
-$(window).resize(function () {
-    if ($(window).width() <= 828) {
-        $('#content').addClass('content_mobile');
-        $('#content').removeClass('content_desktop');
-        $('#contact_mobile').show();
-    } else {
         $('#content').addClass('content_desktop');
-        $('#content').removeClass('content_mobile');
-    }
+    });
+
+    $(window).resize(function () {
+        if ($(window).width() <= 828) {
+            $('#content').addClass('content_mobile');
+            $('#content').removeClass('content_desktop');
+            $('#contact').hide();
+            $('#contact_mobile').show();
+
+        } else {
+            $('#content').removeClass('content_mobile');
+            $('#content').addClass('content_desktop');
+            $('#contact_mobile').hide();
+        }
+    });
 });
 window.onscroll = function () {
     scrollFunction()

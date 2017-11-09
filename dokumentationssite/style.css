@@ -277,7 +277,16 @@ header {
     letter-spacing: 5px;
     color: #F7F0E7;
     width: 100%;
+}
 
+#history h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Futura';
+    letter-spacing: 2px;
+    color: #F7F0E7;
+    margin: 10px;
 }
 
 #history .sectionwrapper {
@@ -458,10 +467,6 @@ header {
     #contact_mobile {
         display: show;
     }
-    #contact {
-        display: none;
-
-    }
     /*------ HISTORY -----*/
     #history h1 {
         text-align: center;
@@ -471,6 +476,15 @@ header {
         letter-spacing: 5px;
         color: #F7F0E7;
         width: 100%;
+    }
+
+    #history h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 3.5vw;
+        font-family: 'Futura';
+        letter-spacing: 2px;
+        color: #F7F0E7;
     }
     #history .sectionwrapper {
         height: 500px;
