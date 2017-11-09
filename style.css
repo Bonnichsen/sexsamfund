@@ -16,7 +16,7 @@ section {
     vertical-align: top;
     width: 1450px;
     height: 550px;
-    background-color: #EAEDEE;
+    background-color: #202533;
 }
 
 footer {
@@ -39,8 +39,8 @@ footer p {
     overflow: hidden;
     z-index: 2;
     white-space: nowrap;
-    background-color: #EAEDEE;
-    margin: 125px 0px 0px 265px;
+    background-color: #F49131;
+    margin: 125px 0px 0px 210px;
     height: 550px;
     animation-name: content_move_in;
     animation-duration: 3s;
@@ -63,13 +63,10 @@ footer p {
 /*------ EARTH -----*/
 
 #scene_earth {
-    background-image: url(img/background_earth.svg);
-    background-size: cover;
     position: absolute;
-    background-repeat: no-repeat;
-    width: 1000px;
+    width: 75vw;
     height: 100%;
-    left: -1px;
+    background-color: #202533;
 }
 
 #stars {
@@ -80,10 +77,11 @@ footer p {
     height: 100%;
     position: absolute;
     animation: pulse_kf 2.5s infinite alternate linear;
+
 }
 
 .pulse {
-    animation: pulse_kf 0.5s infinite alternate linear;
+    animation: pulse_kf 2.5s infinite alternate linear;
 }
 
 @keyframes pulse_kf {
@@ -91,7 +89,7 @@ footer p {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.1);
+        transform: scale(0.9);
     }
 }
 
@@ -132,18 +130,20 @@ footer p {
 
 .block_arrow {
     text-align: center;
-    margin-top: 240px;
     vertical-align: middle;
     display: inline-block;
     overflow: hidden;
     z-index: 2;
     font-size: 60px;
-    width: 150px;
-    background-color: #EAEDEE;
+    width: 225px;
+    height: 100%;
+    margin-left: -4px;
+    background-color: #202533;
     border: none;
 }
 
 #next_btn {
+    margin-top: 225px;
     border: none;
     background: none;
 }
@@ -378,6 +378,16 @@ header {
     height: 90%;
     background-color: blue;
 }
+
+/*------ ANIMATION -----*/
+
+/*------ DESIGN ------*/
+
+/*------ CHARACTER ----*/
+
+/*------ CODING ------*/
+
+/*------ WORK --------*/
 
 /*------ CONTACT ------*/
 
