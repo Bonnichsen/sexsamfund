@@ -40,7 +40,7 @@ footer p {
     z-index: 2;
     white-space: nowrap;
     background-color: #F49131;
-    margin: 125px 0px 0px 210px;
+    margin: 115px 0px 0px 210px;
     height: 550px;
     animation-name: content_move_in;
     animation-duration: 3s;
@@ -49,6 +49,7 @@ footer p {
     animation-timing-function: ease-in;
 }
 
+/*
 @keyframes content_move_in {
     0% {
         left: 0;
@@ -59,72 +60,7 @@ footer p {
         opacity: 0;
     }
 }
-
-/*------ EARTH -----*/
-
-#scene_earth {
-    position: absolute;
-    width: 75vw;
-    height: 100%;
-    background-color: #202533;
-}
-
-#stars {
-    background-image: url(img/stars_earth-01.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    animation: pulse_kf 2.5s infinite alternate linear;
-
-}
-
-.pulse {
-    animation: pulse_kf 2.5s infinite alternate linear;
-}
-
-@keyframes pulse_kf {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0.9);
-    }
-}
-
-#earth_container {
-    position: absolute;
-    top: -15vw;
-    left: 20vw;
-}
-
-#earth_sprite {
-    background-image: url(img/spritesheet_earth.svg);
-    background-size: 1600%;
-    width: 30vw;
-    height: 50vw;
-}
-
-.earth_walkcycle {
-    animation-name: earth_walkcycle_kf;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-play-state: linear;
-    animation-timing-function: steps(15);
-}
-
-@keyframes earth_walkcycle_kf {
-    0% {
-        background-position: 100%;
-    }
-    50% {
-        background-position: 1600%;
-    }
-    100% {
-        background-position: 100%;
-    }
-}
+*/
 
 /*------- ARROW NEXT BUTTON ------*/
 
@@ -146,6 +82,7 @@ footer p {
     margin-top: 225px;
     border: none;
     background: none;
+    display: none;
 }
 
 #next_btn a {
@@ -333,6 +270,75 @@ header {
 
 #splash {
     width: 1040px;
+    display:
+}
+
+/*------ EARTH -----*/
+
+#scene_earth {
+    position: absolute;
+    width: 75vw;
+    height: 100%;
+    background-color: #202533;
+    display: none;
+}
+
+#stars {
+    background-image: url(img/stars_earth-01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: pulse_kf 2.5s infinite alternate linear;
+    opacity: 0.4;
+
+}
+
+.pulse {
+    animation: pulse_kf 2.5s infinite alternate linear;
+}
+
+@keyframes pulse_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+
+#earth_container {
+    position: absolute;
+    top: -15vw;
+    left: 20vw;
+}
+
+#earth_sprite {
+    background-image: url(img/spritesheet_earth.svg);
+    background-size: 1600%;
+    width: 30vw;
+    height: 50vw;
+}
+
+.earth_walkcycle {
+    animation-name: earth_walkcycle_kf;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-play-state: linear;
+    animation-timing-function: steps(15);
+}
+
+@keyframes earth_walkcycle_kf {
+    0% {
+        background-position: 100%;
+    }
+    50% {
+        background-position: 1600%;
+    }
+    100% {
+        background-position: 100%;
+    }
 }
 
 /*------ HISTORY -----*/
@@ -353,7 +359,7 @@ header {
     font-size: 25px;
     font-family: 'Futura';
     letter-spacing: 2px;
-    color: #F7F0E7;
+    color: #202533;
     margin: 10px;
 }
 
@@ -395,6 +401,16 @@ header {
 
 }
 
+#animation h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+    width: 100%;
+}
+
 /*------ DESIGN ------*/
 
 #design .sectionwrapper {
@@ -405,6 +421,16 @@ header {
     justify-content: center;
     background-color: #F49131;
 
+}
+
+#design h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #F7F0E7;
+    width: 100%;
 }
 
 /*------ CHARACTER ----*/
@@ -419,6 +445,16 @@ header {
 
 }
 
+#characters h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+    width: 100%;
+}
+
 /*------ CODING ------*/
 
 #coding .sectionwrapper {
@@ -431,6 +467,16 @@ header {
 
 }
 
+#coding h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #F7F0E7;
+    width: 100%;
+}
+
 /*------ WORK --------*/
 
 #work .sectionwrapper {
@@ -441,6 +487,16 @@ header {
     justify-content: center;
     background-color: #F7F0E7;
 
+}
+
+#work h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+    width: 100%;
 }
 
 /*------ CONTACT ------*/

@@ -1,8 +1,13 @@
 $(window).ready(function () {
+    setTimeout(function () {
+        $("#scene_earth").fadeIn(1500);
+        $("#next_btn").fadeIn(1500);
+    }, 1000);
     $(".container_drop").click(function () {
         $(".container_drop").toggleClass("change");
         $(".dropdown").slideToggle();
     });
+
     if ($(window).width() <= 828) {
         $('#content').addClass('content_mobile');
         $('#content').removeClass('content_desktop');
