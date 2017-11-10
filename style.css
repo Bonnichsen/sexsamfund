@@ -364,32 +364,39 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     background-color: #F49131;
+    white-space: normal;
+}
 
+#history p {
+    font-family: 'Open Sans';
+    color: #F7F0E7;
+    margin: 2.2vw;
 }
 
 #history .column_1 {
     width: 50%;
     height: 90%;
-    background-color: green;
 }
 
 #history .column_2 {
     width: 50%;
     height: 90%;
-    background-color: blue;
 }
 
 /*------ ANIMATION -----*/
+
 #animation .sectionwrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #F49131;
+    background-color: #F7F0E7;
 
 }
+
 /*------ DESIGN ------*/
+
 #design .sectionwrapper {
     height: 100%;
     width: 100%;
@@ -399,17 +406,21 @@ header {
     background-color: #F49131;
 
 }
+
 /*------ CHARACTER ----*/
+
 #characters .sectionwrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #F49131;
+    background-color: #F7F0E7;
 
 }
+
 /*------ CODING ------*/
+
 #coding .sectionwrapper {
     height: 100%;
     width: 100%;
@@ -419,16 +430,19 @@ header {
     background-color: #F49131;
 
 }
+
 /*------ WORK --------*/
+
 #work .sectionwrapper {
     height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #F49131;
+    background-color: #F7F0E7;
 
 }
+
 /*------ CONTACT ------*/
 
 #contact h1 {
