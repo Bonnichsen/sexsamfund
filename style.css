@@ -380,15 +380,55 @@ header {
 }
 
 /*------ ANIMATION -----*/
+#animation .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F49131;
 
+}
 /*------ DESIGN ------*/
+#design .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F49131;
 
+}
 /*------ CHARACTER ----*/
+#characters .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F49131;
 
+}
 /*------ CODING ------*/
+#coding .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F49131;
 
+}
 /*------ WORK --------*/
+#work .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F49131;
 
+}
 /*------ CONTACT ------*/
 
 #contact h1 {
