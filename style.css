@@ -433,6 +433,7 @@ header {
     width: 100%;
 }
 
+
 /*------ CHARACTER ----*/
 
 #characters .sectionwrapper {
@@ -453,6 +454,27 @@ header {
     letter-spacing: 5px;
     color: #202533;
     width: 100%;
+}
+
+#characters .column_1 {
+    width: 25%;
+    height: 86%;
+    background-color: red;
+    background-image: url(img/dreng.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#characters .column_2 {
+    width: 50%;
+    height: 90%;
+    background-color: blue;
+}
+
+#characters .column_3 {
+    width: 25%;
+    height: 86%;
+    background-color: green;
 }
 
 /*------ CODING ------*/
