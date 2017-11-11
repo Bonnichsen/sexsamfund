@@ -438,17 +438,6 @@ header {
 
 /*------ CHARACTER ----*/
 
-#characters .sectionwrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #F7F0E7;
-    white-space: normal;
-
-}
-
 #characters h1 {
     text-align: center;
     margin: 0;
@@ -475,6 +464,17 @@ header {
     margin: 2.2vw;
 }
 
+#characters .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F7F0E7;
+    white-space: normal;
+
+}
+
 #characters .column_1 {
     width: 25%;
     height: 86%;
@@ -499,6 +499,30 @@ header {
 
 /*------ CODING ------*/
 
+#coding h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #F7F0E7;
+    width: 100%;
+}
+
+#coding a {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+}
+
+#coding a:hover {
+    transform: scale(1.2);
+    color: #F7F0E7;
+}
+
 #coding .sectionwrapper {
     height: 100%;
     width: 100%;
@@ -510,17 +534,55 @@ header {
 
 }
 
-#coding h1 {
+#coding .column_1 {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+
+#coding .column_2 {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(img/programming_flat.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*------ WORK --------*/
+
+#work h1 {
     text-align: center;
     margin: 0;
     font-size: 60px;
     font-family: 'Futura';
     letter-spacing: 5px;
-    color: #F7F0E7;
+    color: #202533;
     width: 100%;
 }
 
-/*------ WORK --------*/
+#work a {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+}
+
+#work a:hover {
+    transform: scale(1.2);
+    color: #F49131;
+}
 
 #work .sectionwrapper {
     height: 100%;
@@ -530,16 +592,37 @@ header {
     justify-content: center;
     background-color: #F7F0E7;
     white-space: normal;
-
 }
 
-#work h1 {
+#work .column_1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 86%;
+    background-color: blue;
+}
+
+#work .column_2 {
+
+    width: 50%;
+    height: 90%;
+}
+
+#work .column_3 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    height: 86%;
+    background-color: red;
+}
+
+#work .top {
     text-align: center;
-    margin: 0;
-    font-size: 60px;
-    font-family: 'Futura';
-    letter-spacing: 5px;
-    color: #202533;
+    width: 100%;
+}
+
+#work .bottom {
+    text-align: center;
     width: 100%;
 }
 
