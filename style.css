@@ -376,7 +376,17 @@ header {
 #history p {
     font-family: 'Open Sans';
     color: #F7F0E7;
-    margin: 2.2vw;
+    margin: 25px;
+}
+
+#history a {
+    justify-content: center;
+    margin: 35px;
+    font-size: 20px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    padding-left: 55px;
+    color: #202533;
 }
 
 #history .column_1 {
@@ -412,7 +422,40 @@ header {
     width: 100%;
 }
 
+#animation a {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #F49131;
+}
+
 /*------ DESIGN ------*/
+
+#design h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #F7F0E7;
+    width: 100%;
+}
+
+#design a {
+    text-align: center;
+    margin: 30px;
+    font-size: 20px;
+    font-family: 'Futura';
+    letter-spacing: 5px;
+    color: #202533;
+    height: 25px;
+}
+
+#design a:hover {
+    color: #F7F0E7;
+}
 
 #design .sectionwrapper {
     height: 100%;
@@ -425,16 +468,17 @@ header {
 
 }
 
-#design h1 {
-    text-align: center;
-    margin: 0;
-    font-size: 60px;
-    font-family: 'Futura';
-    letter-spacing: 5px;
-    color: #F7F0E7;
-    width: 100%;
+#design .column_1 {
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+#design .column_2 {
+    width: 80%;
+    height: 90%;
+}
 
 /*------ CHARACTER ----*/
 
@@ -461,7 +505,7 @@ header {
 #characters p {
     font-family: 'Open Sans';
     color: #202533;
-    margin: 2.2vw;
+    margin: 25px;
 }
 
 #characters .sectionwrapper {
@@ -580,6 +624,13 @@ header {
 
 #work a:hover {
     color: #202533;
+}
+
+#work p {
+    font-family: 'Open Sans';
+    color: #202533;
+
+    margin: 30px
 }
 
 #work .sectionwrapper {
