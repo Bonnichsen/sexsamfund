@@ -430,7 +430,12 @@ header {
     justify-content: center;
     background-color: #F7F0E7;
     white-space: normal;
+}
 
+#animation img {
+    width: 400px;
+    height: 400px;
+    animation: pulse_kf 2.5s infinite alternate linear;
 }
 
 /*------ DESIGN ------*/
@@ -1096,6 +1101,12 @@ header {
         white-space: normal;
         padding-top: 45px;
 
+    }
+
+    #animation img {
+        width: 70vw;
+        height: 70vw;
+        animation: pulse_kf 2.5s infinite alternate linear;
     }
     /*------ DESIGN ------*/
     #design h1 {
