@@ -40,7 +40,7 @@ footer p {
     z-index: 2;
     white-space: nowrap;
     background-color: #F49131;
-    margin: 115px 0px 0px 210px;
+    margin: 115px 0px 0px 15vw;
     height: 550px;
     animation-name: content_move_in;
     animation-duration: 3s;
@@ -69,7 +69,6 @@ footer p {
     vertical-align: middle;
     display: inline-block;
     overflow: hidden;
-    z-index: 2;
     font-size: 60px;
     width: 225px;
     height: 100%;
@@ -146,7 +145,7 @@ nav a:hover {
 header {
     position: fixed;
     width: 100%;
-    background-color: #202533;
+    background-color: #384159;
     height: 55px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 4;
@@ -158,7 +157,7 @@ header {
     padding: 8px 20px;
     display: block;
     cursor: pointer;
-    background-color: #202533;
+    background-color: #384159;
     min-width: 200px;
 }
 
@@ -270,14 +269,13 @@ header {
 
 #splash {
     width: 1040px;
-    display:
 }
 
 /*------ EARTH -----*/
 
 #scene_earth {
     position: absolute;
-    width: 75vw;
+    width: 1000px;
     height: 100%;
     background-color: #202533;
     display: none;
@@ -310,15 +308,15 @@ header {
 
 #earth_container {
     position: absolute;
-    top: -15vw;
+    top: -200px;
     left: 20vw;
 }
 
 #earth_sprite {
     background-image: url(img/spritesheet_earth.svg);
     background-size: 1600%;
-    width: 30vw;
-    height: 50vw;
+    width: 400px;
+    height: 700px;
 }
 
 .earth_walkcycle {
@@ -405,17 +403,6 @@ header {
 
 /*------ ANIMATION -----*/
 
-#animation .sectionwrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #F7F0E7;
-    white-space: normal;
-
-}
-
 #animation h1 {
     text-align: center;
     margin: 0;
@@ -433,6 +420,17 @@ header {
     font-family: 'Futura';
     letter-spacing: 5px;
     color: #F49131;
+}
+
+#animation .sectionwrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F7F0E7;
+    white-space: normal;
+
 }
 
 /*------ DESIGN ------*/
@@ -486,8 +484,13 @@ header {
     text-align: center;
 }
 
-#design img {
+#insta_anon {
     width: 35%;
+    border: 2px solid #202533;
+}
+
+#face_anon {
+    width: 54%;
     border: 2px solid #202533;
 }
 
@@ -509,6 +512,7 @@ header {
 #design .column_3 {
     width: 40%;
     height: 90%;
+    text-align: center;
 }
 
 /*------ CHARACTER ----*/
@@ -676,11 +680,14 @@ header {
     color: #202533;
 }
 
+#fernis {
+    padding-left: 180px;
+}
+
 #work p {
     font-family: 'Open Sans';
     color: #202533;
-
-    margin: 30px
+    margin: 30px;
 }
 
 #work .sectionwrapper {
@@ -786,6 +793,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100px;
+
     width: 200px;
     height: 200px;
     order: 1;
@@ -860,7 +868,6 @@ header {
         display: inline-block;
         width: 100%;
         height: 100%;
-        background-color: #EAEDEE;
     }
 
     footer {
@@ -878,10 +885,122 @@ header {
         color: white;
     }
 
+    .content_desktop {
+        position: absolute;
+        overflow: hidden;
+        z-index: 2;
+        white-space: normal;
+        background-color: #F49131;
+        margin: 115px 0px 0px 210px;
+        height: 550px;
+        animation-name: content_move_in;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-direction: reverse;
+        animation-timing-function: ease-in;
+    }
     /*------ SPLASH -----*/
     #splash {
         width: 100%;
+        height: 50%;
+    }
+
+    /*------ EARTH -----*/
+    #scene_earth {
+        position: relative;
+        width: 100%;
+        height: 150vw;
+        background-color: #202533;
+        display: none;
+    }
+
+    #stars {
+        background-image: url(img/stars_earth-01.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
         height: 100%;
+        position: absolute;
+        animation: pulse_kf 2.5s infinite alternate linear;
+        opacity: 0.4;
+
+    }
+
+    .pulse {
+        animation: pulse_kf 2.5s infinite alternate linear;
+    }
+
+    @keyframes pulse_kf {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(0.8);
+        }
+    }
+
+    #earth_container {
+        position: absolute;
+        top: 0vw;
+        left: 20vw;
+    }
+
+    #earth_sprite {
+        background-image: url(img/spritesheet_earth.svg);
+        background-size: 1600%;
+        width: 60vw;
+        height: 90vw;
+    }
+
+    .earth_walkcycle {
+        animation-name: earth_walkcycle_kf;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-play-state: linear;
+        animation-timing-function: steps(15);
+    }
+
+    @keyframes earth_walkcycle_kf {
+        0% {
+            background-position: 100%;
+        }
+        50% {
+            background-position: 1600%;
+        }
+        100% {
+            background-position: 100%;
+        }
+    }
+
+
+    /*------- ARROW NEXT BUTTON ------*/
+    .block_arrow {
+        text-align: center;
+        vertical-align: middle;
+        display: inline-block;
+        overflow: hidden;
+        z-index: 2;
+        font-size: 60px;
+        width: 100%;
+        margin-left: 0px;
+        background-color: #202533;
+        border: none;
+        padding-bottom: 50px;
+    }
+
+    #next_btn {
+        margin-top: 0px;
+        transform: rotate(90deg);
+        border: none;
+        background: none;
+        display: none;
+    }
+
+    #next_btn a {
+        font-size: 60px;
+        color: #F49131;
+        cursor: pointer;
+        text-decoration: none;
     }
     /*------ HISTORY -----*/
     #history h1 {
@@ -891,7 +1010,7 @@ header {
         font-family: 'Futura';
         letter-spacing: 5px;
         color: #F7F0E7;
-        width: 100%;
+        margin-top: 30px;
     }
 
     #history h2 {
@@ -900,30 +1019,392 @@ header {
         font-size: 3.5vw;
         font-family: 'Futura';
         letter-spacing: 2px;
-        color: #F7F0E7;
+        color: #202533;
+        margin-top: 30px;
     }
+
     #history .sectionwrapper {
-        height: 500px;
+        height: 100%;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         background-color: #F49131;
+        white-space: normal;
+        padding-top: 45px;
+    }
 
+    #history p {
+        font-family: 'Open Sans';
+        color: #F7F0E7;
+        margin: 25px;
+    }
+
+    #history a {
+        justify-content: center;
+
+        margin: 35px;
+        line-height: 50px;
+        font-size: 20px;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        padding-left: 55px;
+        color: #202533;
+    }
+
+    #history a:hover {
+        color: #F7F0E7;
     }
 
     #history .column_1 {
         width: 100%;
-        height: 50%;
-        background-color: green;
+        height: 100%;
     }
 
     #history .column_2 {
         width: 100%;
-        height: 50%;
-        background-color: blue;
+        height: 100%;
+    }
+    /*------ ANIMATION -----*/
+    #animation h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #202533;
+        width: 100%;
+        margin-top: 30px;
     }
 
+    #animation a {
+        text-align: center;
+        margin: 0;
+        font-size: 5vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F49131;
+    }
+
+    #animation .sectionwrapper {
+        height: 800px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F7F0E7;
+        white-space: normal;
+        padding-top: 45px;
+
+    }
+    /*------ DESIGN ------*/
+    #design h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F7F0E7;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #design h2 {
+        text-align: center;
+        font-size: 4vw;
+        font-family: 'Futura';
+        letter-spacing: 2px;
+        color: #202533;
+        margin-top: 30px;
+    }
+
+    #design a {
+        text-align: center;
+        margin: 30px;
+        font-size: 15px;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F7F0E7;
+        height: 25px;
+    }
+
+    #design a:hover {
+        color: #F7F0E7;
+    }
+
+    #design .sectionwrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F49131;
+        white-space: normal;
+        padding: 45px 0px;
+    }
+
+    #design .column_1 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #insta_anon {
+        width: 80%;
+        border: 2px solid #202533;
+    }
+
+    #face_anon {
+        width: 80%;
+        border: 2px solid #202533;
+    }
+
+    #design img:hover {
+        transform: scale(1);
+        margin-top: 0;
+        border: 2px solid #202533;
+
+    }
+
+    #design .column_2 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #design .column_3 {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    /*------ CHARACTER ----*/
+    #characters h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #202533;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #characters h2 {
+        text-align: center;
+        margin: 0;
+        font-size: 4vw;
+        font-family: 'Futura';
+        letter-spacing: 2px;
+        color: #F49131;
+        margin: 10px;
+    }
+
+    #characters p {
+        font-family: 'Open Sans';
+        color: #202533;
+        margin: 25px;
+    }
+
+    #characters .sectionwrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F7F0E7;
+        white-space: normal;
+        padding-top: 45px;
+
+
+    }
+
+    #characters .column_1 {
+        width: 50%;
+        order: 1;
+        height: 70vw;
+        background-image: url(img/dreng.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+    }
+
+    #characters .column_2 {
+        width: 100%;
+        height: 35%;
+        order: 3;
+    }
+
+    #characters .bottom {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 70px;
+        order: 5;
+    }
+
+    #characters .column_4 {
+        width: 50%;
+        height: 70vw;
+        background-image: url(img/pige.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        order: 1;
+        text-align: center;
+    }
+
+    #characters img {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+
+    #characters img:hover {
+        transform: scale(1);
+        border: 0px;
+    }
+
+    /*------ CODING ------*/
+    #coding h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F7F0E7;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #coding a {
+        text-align: center;
+        margin: 20px;
+        width: 100%;
+        font-size: 20px;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #202533;
+    }
+
+    #coding a:hover {
+        color: #202533;
+    }
+
+    #coding .sectionwrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F49131;
+        white-space: normal;
+        padding-top: 45px;
+    }
+
+    #coding .column_1 {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        margin: 100px 0 100px 0;
+    }
+
+    #coding .column_2 {
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-image: url(img/programming_flat.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    /*------ WORK --------*/
+    #work h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 6vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #202533;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #work a {
+        text-align: center;
+        margin: 0;
+        font-size: 4vw;
+        font-family: 'Futura';
+        letter-spacing: 5px;
+        color: #F49131;
+    }
+
+    #fernis {
+        padding-left: 15vw;
+    }
+
+    #work a:hover {
+        color: #F49131;
+    }
+
+    #work p {
+        font-family: 'Open Sans';
+        color: #202533;
+        margin: 30px;
+    }
+
+    #work .sectionwrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #F7F0E7;
+        white-space: normal;
+        padding: 45px 0px;
+    }
+
+    #work .column_1 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 86%;
+        margin: 33px 0 0 0;
+    }
+
+    #work .column_2 {
+
+        width: 100%;
+        height: 90%;
+
+    }
+
+    #work .column_3 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 86%;
+        margin: 0px 0 0 0;
+    }
+
+    #work .top {
+        text-align: center;
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    #work .bottom {
+        text-align: center;
+        width: 100%;
+
+    }
     /*------ CONTACT ------*/
     #contact_mobile h1 {
         text-align: center;
@@ -960,7 +1441,7 @@ header {
         flex-wrap: wrap;
         justify-content: center;
         background-color: #F49131;
-
+        padding-top: 45px;
     }
 
     #contact_mobile .column_1 {
@@ -985,6 +1466,7 @@ header {
     }
     #contact_mobile .benjamin {
         order: 1;
+        margin-bottom: 150px;
     }
     #benjamin:hover {
         transform: scale(1);
@@ -1002,6 +1484,7 @@ header {
     }
     #contact_mobile .beatrice {
         order: 2;
+        margin-bottom: 150px;
     }
     #beatrice:hover {
         transform: scale(1);
@@ -1019,6 +1502,7 @@ header {
     }
     #contact_mobile .anna {
         order: 3;
+        margin-bottom: 150px;
     }
     #anna:hover {
         transform: scale(1);
@@ -1036,6 +1520,7 @@ header {
     }
     #contact_mobile .amanda {
         order: 4;
+        margin-bottom: 80px;
     }
     #amanda:hover {
         transform: scale(1);
