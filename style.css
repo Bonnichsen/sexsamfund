@@ -796,7 +796,7 @@ header {
 }
 
 #benjamin {
-    background-image: url("/img/selfportraits/benjamin.jpg");
+    background-image: url("img/selfportraits/benjamin.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100px;
@@ -811,7 +811,7 @@ header {
 }
 
 #beatrice {
-    background-image: url("/img/selfportraits/beatrice.jpeg");
+    background-image: url("img/selfportraits/beatrice.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100px;
@@ -825,7 +825,7 @@ header {
 }
 
 #anna {
-    background-image: url("/img/selfportraits/anna.jpg");
+    background-image: url("img/selfportraits/anna.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100px;
@@ -843,7 +843,7 @@ header {
 }
 
 #amanda {
-    background-image: url("/img/selfportraits/amanda.jpg");
+    background-image: url("img/selfportraits/amanda.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 100px;
