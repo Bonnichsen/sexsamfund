@@ -125,11 +125,11 @@ nav {
 nav a {
     display: inline-block;
     color: #F49131;
-    margin: 1.3vw;
+    margin: 1.2vw;
     text-decoration: none;
     font-family: 'Futura';
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 1vw;
     letter-spacing: 0.2vw;
     vertical-align: middle;
 }
