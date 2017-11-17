@@ -111,18 +111,23 @@ footer p {
 
 /*---------- NAVIGATIONS MENU --------*/
 
-#nav_menu {
-    flex-wrap: nowrap;
-}
-
-nav {
+#primary_nav_wrap {
     background-color: #202533;
     position: fixed;
     width: 100%;
     text-align: center;
+    z-index: 100;
 }
 
-nav a {
+#primary_nav_wrap ul {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0
+}
+
+#primary_nav_wrap ul a {
     display: inline-block;
     color: #F49131;
     margin: 1.2vw;
@@ -134,9 +139,53 @@ nav a {
     vertical-align: middle;
 }
 
-nav a:hover {
+#primary_nav_wrap ul a:hover {
     color: #F7F0E7;
 }
+
+
+
+#primary_nav_wrap ul li {
+    position: relative;
+    display: inline-block;
+    margin: 6px;
+
+}
+
+#primary_nav_wrap ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    background-color: #202533;
+    padding: 0;
+    text-align: left;
+
+
+}
+
+#primary_nav_wrap ul ul li {
+    display: inline-block;
+    width: 200px;
+
+}
+
+#primary_nav_wrap ul ul a {
+
+    padding: 0;
+}
+
+#primary_nav_wrap ul ul ul {
+    top: 0;
+    left: 100%
+}
+
+#primary_nav_wrap ul li:hover > ul {
+    display: block;
+    color: #F7F0E7;
+}
+
 
 /* ------- NAV CONTENT ------- */
 
